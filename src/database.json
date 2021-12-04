@@ -1,3 +1,58 @@
 {
-    
+  "products ": [
+    {
+      "brand": "Versace",
+      "productName": "WOOLEN CAP Cap",
+      "discountedPrice": "₹1000",
+      "originalPrice": "₹1500",
+      "productIamgeUrl": "https://rukminim1.flixcart.com/image/800/960/kgsb1jk0/cap/h/y/g/free-stylish-black-balkalova-cap-fashlook-original-imafwy64umkfsefu.jpeg?q=50",
+      "size": "s",
+      "gender": "men"
+    },
+    {
+      "brand": "Louis Vuitton",
+      "productName": "Solid Cap With Neck Warmer Cap  (Pack of 2)",
+      "discountedPrice": "₹2000",
+      "originalPrice": "₹2500",
+      "productIamgeUrl": "https://rukminim1.flixcart.com/image/762/914/ki6bgcw0-0/cap/4/t/d/free-black-men-cap-with-neck-scarf-amormente-original-imafyf2ugjtcaf7g.jpeg?q=50",
+      "size": "l",
+      "gender": "men"
+    },
+    {
+      "brand": "Prada",
+      "productName": "Printed Men Hooded Neck Black T-Shirt",
+      "discountedPrice": "₹4000",
+      "originalPrice": "₹4500",
+      "productIamgeUrl": "https://rukminim1.flixcart.com/image/762/914/kl2mljk0/t-shirt/a/3/k/4xl-tblhdfulmask-lion-tripr-original-imagy9tcx7q25wym.jpeg?q=50",
+      "size": "xl",
+      "gender": "men"
+    },
+    {
+      "brand": "LouisVuitton",
+      "productName": "Full Sleeve Solid Women Quilted Jacket",
+      "discountedPrice": "₹3000",
+      "originalPrice": "₹3500",
+      "productIamgeUrl": "https://rukminim1.flixcart.com/image/762/914/kt39jm80/jacket/9/c/n/l-no-y-womens-winter-jacket-elanhood-original-imag6ggjtzec5zsw.jpeg?q=50",
+      "size": "xxl",
+      "gender": "women"
+    },
+    {
+      "brand": "Prada",
+      "productName": "Full Sleeve Solid Women Sports Jacket",
+      "discountedPrice": "₹7000",
+      "originalPrice": "₹7500",
+      "productIamgeUrl": "https://rukminim1.flixcart.com/image/762/914/kflftzk0/jacket/k/d/7/xl-girlswet-pink-christy-world-original-imafwyyczmpraphj.jpeg?q=50",
+      "size": "xl",
+      "gender": "women"
+    },
+    {
+      "brand": "Versace",
+      "productName": "3/4th Sleeve Solid Women Jacket",
+      "discountedPrice": "₹6000",
+      "originalPrice": "₹6500",
+      "productIamgeUrl": "https://rukminim1.flixcart.com/image/762/914/jusp3m80/jacket/z/3/t/s-mnt-4061-montrez-original-imafftft6djq2dmd.jpeg?q=50",
+      "size": "xl",
+      "gender": "women"
+    }
+  ]
 }
