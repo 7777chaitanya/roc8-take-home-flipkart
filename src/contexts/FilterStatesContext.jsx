@@ -9,14 +9,34 @@ export const FilterStatesProvider = ({ children }) => {
   const [gender, setGender] = useState("all");
 
   let products = database.products;
-  // let productsToRender = products.filter(product => {
-  //   return (product.size === size && product.gender === gender && product.brand === brand)
-  // })
+  let productsToRender;
+  if (size === "all" && brand === "all" && gender === "all") {
+    productsToRender = products;
+  } else {
+    let localProducts = products;
+    if (size !== "all") {
+      localProducts = localProducts.filter((eachItem) => {
+        return eachItem.size === size;
+      });
+    }
 
-  let productsToRender = products;
+    if (gender !== "all") {
+      localProducts = localProducts.filter((eachItem) => {
+        return eachItem.gender === gender;
+      });
+    }
 
-  
-  
+    if (brand !== "all") {
+      localProducts = localProducts.filter((eachItem) => {
+        return eachItem.brand === brand;
+      });
+    }
+
+    productsToRender = localProducts;
+  }
+
+  // let productsToRender = products;
+  console.log("sbg => ", size, brand, gender);
 
   const value = { setSize, setBrand, setGender, productsToRender };
 
