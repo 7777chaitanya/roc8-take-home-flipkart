@@ -10,7 +10,10 @@ const EachProductCard = ({ eachItem }) => {
         <img src={eachItem.productImageUrl} alt={eachItem.productName} className={classes.productImage}/>
       </div>
       <div className={classes.productDetailsAndPriceDiv}>
-        <h6>{eachItem.originalPrice}</h6>
+        <h5>{eachItem.brand}</h5>
+        <h5>{eachItem.productName}</h5>
+        <h6>discounted price : <strike>{eachItem.discountedPrice}</strike></h6>
+        <h6>original price : {eachItem.originalPrice}</h6>
       </div>
     </div>
   );
