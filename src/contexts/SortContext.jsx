@@ -4,26 +4,31 @@ import { FilterStatesContext } from "./FilterStatesContext";
 export const SortContext = createContext();
 
 export const SortProvider = ({ children }) => {
-  const [sort, setSort] = useState(null);
+  const [sort, setSort] = useState("");
 
   const handleSortChange = (sortBasedOnWhat) => {
     setSort((p) => sortBasedOnWhat);
   };
 
   const { productsToRender } = useContext(FilterStatesContext);
-  let productsToRenderAfterSort = productsToRender;
+  let productsToRenderCopy = [...productsToRender];
+  let productsToRenderAfterSort;
+
+  if (sort === "") {
+    productsToRenderAfterSort = productsToRender;
+  }
 
   if (sort === "highToLow") {
     console.log(sort);
 
-    productsToRenderAfterSort = productsToRender.sort(
-      (x, y) => { return Number(y.price) - Number(x.price)}
-    );
+    productsToRenderAfterSort = productsToRenderCopy.sort((x, y) => {
+      return Number(y.price) - Number(x.price);
+    });
   }
   if (sort === "lowToHigh") {
     console.log(sort);
 
-    productsToRenderAfterSort = productsToRender.sort(
+    productsToRenderAfterSort = productsToRenderCopy.sort(
       (x, y) => Number(x.price) - Number(y.price)
     );
   }
