@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import useStyles from './styles'
 
 const Filter = () => {
+    const classes = useStyles();
     return (
-        <div>
+        <div className={classes.filterBody}>
             Filter
         </div>
     )

@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
+import useStyles from "./styles";
 
 const ProductListing = () => {
-    return (
-        <div>
-            ProductListing
-        </div>
-    )
-}
+  const classes = useStyles();
+  return <div className={classes.productListingBody}>ProductListing</div>;
+};
 
-export default ProductListing
+export default ProductListing;
