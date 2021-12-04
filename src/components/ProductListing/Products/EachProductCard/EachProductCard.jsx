@@ -15,8 +15,8 @@ const EachProductCard = ({ eachItem }) => {
         <h6>size : {eachItem.size}</h6>
         <h6>gender : {eachItem.gender}</h6>
 
-        <h6>discounted price : <strike>{eachItem.discountedPrice}</strike></h6>
-        <h6>original price : {eachItem.originalPrice}</h6>
+        <h6>discounted price : {eachItem.discountedPrice}</h6>
+        <h6>original price : <strike>{eachItem.originalPrice}</strike></h6>
       </div>
     </div>
   );

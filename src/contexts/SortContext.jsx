@@ -7,21 +7,26 @@ export const SortProvider = ({ children }) => {
   const [sort, setSort] = useState(null);
 
   const handleSortChange = (sortBasedOnWhat) => {
-      setSort(p => sortBasedOnWhat);
-  }
-
-  
+    setSort((p) => sortBasedOnWhat);
+  };
 
   const { productsToRender } = useContext(FilterStatesContext);
   let productsToRenderAfterSort = productsToRender;
 
-  if(sort === "highToLow"){
+  if (sort === "highToLow") {
+    console.log(sort);
 
+    productsToRenderAfterSort = productsToRender.sort(
+      (x, y) => { return Number(y.price) - Number(x.price)}
+    );
   }
-  if(sort==="lowToHigh"){
-      
-  }
+  if (sort === "lowToHigh") {
+    console.log(sort);
 
+    productsToRenderAfterSort = productsToRender.sort(
+      (x, y) => Number(x.price) - Number(y.price)
+    );
+  }
 
   const value = { productsToRenderAfterSort, handleSortChange };
 

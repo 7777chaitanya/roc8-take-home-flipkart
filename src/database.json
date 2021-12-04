@@ -7,7 +7,8 @@
       "originalPrice": "₹1500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/800/960/kgsb1jk0/cap/h/y/g/free-stylish-black-balkalova-cap-fashlook-original-imafwy64umkfsefu.jpeg?q=50",
       "size": "s",
-      "gender": "men"
+      "gender": "men",
+      "price" : "1000"
     },
     {
       "brand": "Louis Vuitton",
@@ -16,7 +17,8 @@
       "originalPrice": "₹2500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/ki6bgcw0-0/cap/4/t/d/free-black-men-cap-with-neck-scarf-amormente-original-imafyf2ugjtcaf7g.jpeg?q=50",
       "size": "l",
-      "gender": "men"
+      "gender": "men",
+      "price" : "2000"
     },
     {
       "brand": "Prada",
@@ -25,7 +27,8 @@
       "originalPrice": "₹4500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/kl2mljk0/t-shirt/a/3/k/4xl-tblhdfulmask-lion-tripr-original-imagy9tcx7q25wym.jpeg?q=50",
       "size": "xl",
-      "gender": "unisex"
+      "gender": "unisex",
+      "price" : "4000"
     },
     {
       "brand": "LouisVuitton",
@@ -34,7 +37,8 @@
       "originalPrice": "₹3500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/kt39jm80/jacket/9/c/n/l-no-y-womens-winter-jacket-elanhood-original-imag6ggjtzec5zsw.jpeg?q=50",
       "size": "xl",
-      "gender": "women"
+      "gender": "women",
+      "price" : "3000"
     },
     {
       "brand": "Prada",
@@ -43,7 +47,8 @@
       "originalPrice": "₹7500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/kflftzk0/jacket/k/d/7/xl-girlswet-pink-christy-world-original-imafwyyczmpraphj.jpeg?q=50",
       "size": "xl",
-      "gender": "women"
+      "gender": "women",
+      "price" : "7000"
     },
     {
       "brand": "Versace",
@@ -52,7 +57,8 @@
       "originalPrice": "₹6500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/jusp3m80/jacket/z/3/t/s-mnt-4061-montrez-original-imafftft6djq2dmd.jpeg?q=50",
       "size": "s",
-      "gender": "unisex"
+      "gender": "unisex",
+      "price" : "6000"
     }
   ]
 }
