@@ -4,7 +4,7 @@ import { FilterStatesContext } from "../../../contexts/FilterStatesContext";
 import EachProductCard from "./EachProductCard/EachProductCard";
 
 const Products = () => {
-  const { filterState, setFilterState, productsToRender } =
+  const { setSize, setBrand, setGender, productsToRender } =
     useContext(FilterStatesContext);
   console.log("proudctssss", productsToRender);
   return (

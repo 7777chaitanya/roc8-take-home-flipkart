@@ -4,19 +4,21 @@ import database from "../database.json";
 export const FilterStatesContext = createContext();
 
 export const FilterStatesProvider = ({ children }) => {
-  const [filterState, setFilterState] = useState(false);
   const [size, setSize] = useState("all");
   const [brand, setBrand] = useState("all");
   const [gender, setGender] = useState("all");
 
   let products = database.products;
-  let productsToRender;
+  // let productsToRender = products.filter(product => {
+  //   return (product.size === size && product.gender === gender && product.brand === brand)
+  // })
 
-  if (size === "all" && brand === "all" && gender === "all") {
-    productsToRender = products
-  }
+  let productsToRender = products;
 
-  const value = { filterState, setFilterState, productsToRender };
+  
+  
+
+  const value = { setSize, setBrand, setGender, productsToRender };
 
   console.log("context => ", productsToRender);
 

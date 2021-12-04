@@ -2,7 +2,7 @@ import React from "react";
 import useStyles from "./styles";
 
 const EachProductCard = ({ eachItem }) => {
-  console.log(eachItem);
+  // console.log(eachItem);
   const classes = useStyles();
   return (
     <div className={classes.eachItemDiv}>
