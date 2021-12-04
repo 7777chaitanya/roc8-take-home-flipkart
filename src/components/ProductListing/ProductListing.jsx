@@ -12,7 +12,7 @@ const ProductListing = () => {
 
   return (
     <div className={classes.productListingBody}>
-      <Sort />
+      {/* <Sort /> */}
       <Products />
     </div>
   );

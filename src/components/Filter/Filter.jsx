@@ -4,7 +4,7 @@ import SizeFilter from './SizeFilter/SizeFilter';
 import BrandFilter from './BrandFilter/BrandFilter';
 import IdealForFilter from './IdealForFilter/IdealForFilter';
 import { FilterStatesContext } from '../../contexts/FilterStatesContext';
-
+import Sort from "../Sort/Sort";
 
 const Filter = () => {
     const classes = useStyles();
@@ -16,6 +16,10 @@ const Filter = () => {
            <BrandFilter />
            <IdealForFilter />
            <button onClick={handleClearFilters}>Clear Filters</button>
+           <br />
+           <br />
+           <br />
+           <Sort />
         </div>
     )
 }

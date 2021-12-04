@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid, Card, Typography} from "@material-ui/core";
 import React, { useContext } from "react";
 import { FilterStatesContext } from "../../../contexts/FilterStatesContext";
 import { SortContext } from "../../../contexts/SortContext";
@@ -12,15 +12,20 @@ const Products = () => {
 
   console.log("proudctssss", productsToRender);
   return (
-    <div>
-      <Grid container>
+    // <div>
+      (productsToRenderAfterSort.length !== 0) ?
+      (<Grid container>
         {productsToRenderAfterSort?.map((eachItem) => (
           <Grid item sm={4}>
             <EachProductCard eachItem={eachItem} />
           </Grid>
         ))}
-      </Grid>
-    </div>
+      </Grid>) :
+      (<Card>
+        <Typography variant="h4">There are no products matching your requirement</Typography>
+      </Card>)
+    // </div>
+      
   );
 };
 
