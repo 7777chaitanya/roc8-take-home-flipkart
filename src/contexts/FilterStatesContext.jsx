@@ -5,7 +5,16 @@ export const FilterStatesContext = createContext();
 
 export const FilterStatesProvider = ({ children }) => {
   const [filterState, setFilterState] = useState(false);
-  let productsToRender = database.products;
+  const [size, setSize] = useState("all");
+  const [brand, setBrand] = useState("all");
+  const [gender, setGender] = useState("all");
+
+  let products = database.products;
+  let productsToRender;
+
+  if (size === "all" && brand === "all" && gender === "all") {
+    productsToRender = products
+  }
 
   const value = { filterState, setFilterState, productsToRender };
 

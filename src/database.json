@@ -25,7 +25,7 @@
       "originalPrice": "₹4500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/kl2mljk0/t-shirt/a/3/k/4xl-tblhdfulmask-lion-tripr-original-imagy9tcx7q25wym.jpeg?q=50",
       "size": "xl",
-      "gender": "men"
+      "gender": "unisex"
     },
     {
       "brand": "LouisVuitton",
@@ -33,7 +33,7 @@
       "discountedPrice": "₹3000",
       "originalPrice": "₹3500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/kt39jm80/jacket/9/c/n/l-no-y-womens-winter-jacket-elanhood-original-imag6ggjtzec5zsw.jpeg?q=50",
-      "size": "xxl",
+      "size": "xl",
       "gender": "women"
     },
     {
@@ -51,8 +51,8 @@
       "discountedPrice": "₹6000",
       "originalPrice": "₹6500",
       "productImageUrl": "https://rukminim1.flixcart.com/image/762/914/jusp3m80/jacket/z/3/t/s-mnt-4061-montrez-original-imafftft6djq2dmd.jpeg?q=50",
-      "size": "xl",
-      "gender": "women"
+      "size": "s",
+      "gender": "unisex"
     }
   ]
 }
