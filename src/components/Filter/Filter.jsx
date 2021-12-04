@@ -8,13 +8,14 @@ import { FilterStatesContext } from '../../contexts/FilterStatesContext';
 
 const Filter = () => {
     const classes = useStyles();
-    const { setSize, setBrand, setGender, productsToRender } =
+    const { productsToRender, handleClearFilters } =
     useContext(FilterStatesContext);
     return (
         <div className={classes.filterBody}>
            <SizeFilter />
            <BrandFilter />
            <IdealForFilter />
+           <button onClick={handleClearFilters}>Clear Filters</button>
         </div>
     )
 }

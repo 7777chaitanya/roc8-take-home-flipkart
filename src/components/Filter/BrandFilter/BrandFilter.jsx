@@ -1,23 +1,36 @@
-import React, {useContext} from "react";
-import { FilterStatesContext } from '../../../contexts/FilterStatesContext';
+import React, { useContext, useRef, useEffect } from "react";
+import { FilterStatesContext } from "../../../contexts/FilterStatesContext";
 
 const BrandFilter = () => {
-    const { setSize, setBrand, setGender, productsToRender } =
+  const { brand, setSize, setBrand, setGender, productsToRender } =
     useContext(FilterStatesContext);
-    
-    const handleBrandChange = (e) => {
-        setBrand(p => e.target.value);
-    }
-    
+
+  const filterRef = useRef(null);
+
+  useEffect(() => {
+    filterRef.current.value = brand;
+  }, [brand]);
+
+  const handleBrandChange = (e) => {
+    // console.log("<<<>>>", filterRef.current.value);
+    setBrand((p) => e.target.value);
+  };
+
   return (
     <div>
       <label for="cars">Choose a Brand : </label>
-      <select name="cars" id="cars" onChange={handleBrandChange}>
+      <select
+        name="cars"
+        id="cars"
+        onChange={handleBrandChange}
+        ref={filterRef}
+      >
         <option value="Louis Vuitton">Louis Vuitton</option>
         <option value="Versace">Versace</option>
         <option value="Prada">Prada</option>
-        <option value="all" selected>all</option>
-
+        <option value="all" selected>
+          all
+        </option>
       </select>
     </div>
   );

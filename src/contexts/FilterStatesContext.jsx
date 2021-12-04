@@ -8,6 +8,14 @@ export const FilterStatesProvider = ({ children }) => {
   const [brand, setBrand] = useState("all");
   const [gender, setGender] = useState("all");
 
+  const handleClearFilters = () => {
+    setSize(p => "all");
+    setBrand(p => "all");
+    setGender(p => "all");
+  }
+
+  
+
   let products = database.products;
   let productsToRender;
   if (size === "all" && brand === "all" && gender === "all") {
@@ -38,7 +46,7 @@ export const FilterStatesProvider = ({ children }) => {
   // let productsToRender = products;
   console.log("sbg => ", size, brand, gender);
 
-  const value = { setSize, setBrand, setGender, productsToRender };
+  const value = { size, brand, gender, setSize, setBrand, setGender, productsToRender,handleClearFilters };
 
   console.log("context => ", productsToRender);
 

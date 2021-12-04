@@ -13,6 +13,8 @@ const EachProductCard = ({ eachItem }) => {
         <h5>{eachItem.brand}</h5>
         <h5>{eachItem.productName}</h5>
         <h6>size : {eachItem.size}</h6>
+        <h6>gender : {eachItem.gender}</h6>
+
         <h6>discounted price : <strike>{eachItem.discountedPrice}</strike></h6>
         <h6>original price : {eachItem.originalPrice}</h6>
       </div>
