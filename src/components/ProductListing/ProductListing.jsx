@@ -1,17 +1,18 @@
 import React, { useContext } from "react";
 import useStyles from "./styles";
-import { FilterStatesContext } from "../../contexts/FilterStatesContext";
 import Products from "./Products/Products";
+import { SortContext } from "../../contexts/SortContext";
+import Sort from "../Sort/Sort";
 
 const ProductListing = () => {
   const classes = useStyles();
-  const { filterState, setFilterState, productsToRender } =
-    useContext(FilterStatesContext);
-  console.log("produtlisting => ", productsToRender);
+  const { productsToRenderAfterSort } = useContext(SortContext);
 
-  console.log("prod list => ", filterState);
+  console.log("produtlisting => ", productsToRenderAfterSort);
+
   return (
     <div className={classes.productListingBody}>
+      <Sort />
       <Products />
     </div>
   );

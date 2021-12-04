@@ -1,6 +1,7 @@
 import React from "react";
 import { Filter, ProductListing } from "./components";
 import { FilterStatesProvider } from "./contexts/FilterStatesContext";
+import { SortProvider } from "./contexts/SortContext";
 import useStyles from "./styles";
 
 const App = () => {
@@ -8,8 +9,10 @@ const App = () => {
   return (
     <div className={classes.appBody}>
       <FilterStatesProvider>
-        <Filter />
-        <ProductListing />
+        <SortProvider>
+          <Filter />
+          <ProductListing />
+        </SortProvider>
       </FilterStatesProvider>
     </div>
   );
